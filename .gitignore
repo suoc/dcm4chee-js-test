@@ -1,0 +1,8 @@
+.vscode
+tmp
+dcmFiles
+DICOM
+dcmFiles-dcm4chee
+logs/*
+
+
