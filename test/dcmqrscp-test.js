@@ -5,7 +5,7 @@ const path = require('path');
 const scpCom = 'dcmqrscp.bat';
 const option = {
     encoding: 'utf-8',
-    cwd: '../dcm4chee-test/apps/lib/dcm4che-5.12.0/bin/'
+    cwd: '../dcm4chee-js/apps/lib/dcm4che-5.12.0/bin/'
 };
 let args = ['-b','BSCQRAE:10002',
             '--dicomdir',path.join(path.dirname(require.main.filename),'/dcmFiles'),
