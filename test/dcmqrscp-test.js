@@ -2,12 +2,17 @@
  * SCP
  */
 const path = require('path');
+const os = require('os');
+
 const scpCom = 'dcmqrscp.bat';
+if (os.platform().indexOf('win32') < 0) {
+    scpCom = './movescu';
+}
 const option = {
     encoding: 'utf-8',
     cwd: '../dcm4chee-js/apps/lib/dcm4che-5.12.0/bin/'
 };
-let args = ['-b','BSCQRAE:10002',
+let args = ['-b','BSCQRAE:11114',
             '--dicomdir',path.join(path.dirname(require.main.filename),'/dcmFiles'),
             '--ae-config',path.join(path.dirname(require.main.filename),'/configs/qr_aes.properties')
             ];
