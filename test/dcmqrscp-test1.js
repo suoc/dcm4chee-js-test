@@ -12,8 +12,8 @@ const option = {
     encoding: 'utf-8',
     cwd: '../dcm4chee-js/apps/lib/dcm4che-5.12.0/bin/'
 };
-let args = ['-b','BSCQRAE:11113',
-            '--dicomdir',path.join(path.dirname(require.main.filename),'/dcmFiles1'),
+let args = ['-b','BSCQRAEB@:11113',
+            '--dicomdir',path.join(path.dirname(require.main.filename),'/dcmFiles-dcm4chee/BSCQRAE_B/dcmFiles1'),
             '--ae-config',path.join(path.dirname(require.main.filename),'/configs/qr_aes.properties')
             ];
 // let args = ['-h'];
